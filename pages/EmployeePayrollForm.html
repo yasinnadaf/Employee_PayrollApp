@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet" href=""/>
     <link rel="stylesheet" href="/css/payrollForm.css">
-    <script src="../js/payrollform.js"></script>
+    <script src="../js/payroll_form.js"></script>
+    <script src="../js/EmpPayrollData.js"></script>
     <title>Employee payroll form</title>
 </head>
 
@@ -29,6 +30,8 @@
             <div class="row-content">
                 <label class="label text" for="name">Name</label>
                 <input class="input" type="text" name="name" id="name" placeholder="Enter name here" required>
+                <!--UC10-->
+                <error-output class="text-error" for="text"></error-output>
             </div>
             <!-- UC3 with Profile pic-->
             <div class="row-content">
@@ -85,9 +88,9 @@
                 <label class="label text" for="salary">Salary</label>
                 <input class="input" type="range" name="salary" id="salary" max="500000" min="300000" step="100"
                     value=400000>
-                <output class="Salary-output text" for="salary">400000</output>
+                <output class="salary-output text" for="salary">400000</output>
             </div>
-             <!--UC Specified start Date-->
+             <!--5UC Specified start Date-->
              <div class="row-content">
                 <label class="label text" for="startdate">Start Date</label>
                 <div>
@@ -162,12 +165,5 @@
             </div>
         </form>
     </div>
-    <script>
-        const salary = document.querySelector('#salary');
-        const output = document.querySelector('.salary-output');
-    salary.addEventListener('input',function(){
-        output.textContent = salary.value;
-    });
-      </script>
 </body>
 </html>

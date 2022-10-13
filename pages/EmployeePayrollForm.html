@@ -24,7 +24,7 @@
         </div>
     </header>
     <div class="form-content">
-        <form class="form" action="#" onsubmit="save(event); return false">
+        <form class="form" action="#" onreset="resetForm()" onsubmit="save()">
             <!-- UC2 Form with header and name-->
             <div class="form-head">Employee Payroll Form</div>
             <div class="row-content">
@@ -86,13 +86,15 @@
             </div>
             <div class="row-content">
                 <label class="label text" for="salary">Salary</label>
-                <input class="input" type="range" name="salary" id="salary" max="500000" min="300000" step="100"
-                    value=400000>
+                <input class="input" type="range" name="salary" id="salary" min="300000" max="500000" step="100"
+                    value="400000">
                 <output class="salary-output text" for="salary">400000</output>
             </div>
-             <!--5UC Specified start Date-->
-             <div class="row-content">
-                <label class="label text" for="startdate">Start Date</label>
+
+
+            <!--UC5 Specified start Date-->
+            <div class="row-content">
+                <label class="label text" for="startDate">Start Date</label>
                 <div>
                     <select id="day" name="Day">
                         <option value="1">1</option>
@@ -128,36 +130,37 @@
                         <option value="31">31</option>
                     </select>
                     <select id="month" name="Month">
-                        <option value="jan">January</option>
-                        <option value="feb">Febuary</option>
-                        <option value="mar">March</option>
-                        <option value="apr">April</option>
-                        <option value="may">May</option>
-                        <option value="june">June</option>
-                        <option value="july">July</option>
-                        <option value="aug">August</option>
-                        <option value="sep">September</option>
-                        <option value="oct">October</option>
-                        <option value="nov">November</option>
-                        <option value="dec">December</option>
+                        <option value="Jan">January</option>
+                        <option value="Feb">February</option>
+                        <option value="Mar">March</option>
+                        <option value="Apr">April</option>
+                        <option value="May">May</option>
+                        <option value="Jun">June</option>
+                        <option value="Jul">July</option>
+                        <option value="Aug">August</option>
+                        <option value="Sep">September</option>
+                        <option value="Oct">October</option>
+                        <option value="Nov">November</option>
+                        <option value="Dec">December</option>
                     </select>
-                    <select id="year" name="Year">
-                        <option value="2022">2022</option>
-                        <option value="2021">2021</option>
-                        <option value="2020">2020</option>
-                        <option value="2019">2019</option>
-                        <option value="2018">2018</option>
-                    </select>
+                        <select id="year" name="Year">
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                        </select>
+                    </div>
                 </div>
-            </div>
-             <!---UC 6 Added Notes and buttons -->
-             <div class="row-content">
+                    
+            <!---UC 6 Added Notes and buttons -->
+            <div class="row-content">
                 <label class="label text" for="notes">Notes</label>
                 <textarea class="input" id="notes" name="notes" placeholder="type your notes here"
                     style="height: 100px;"></textarea>
             </div>
             <div class="buttonParent">
-                <a href="./EmployeePayrollForm.html" class="resetButton button cancelButton">Cancel</a>
+                <a href="home.html" class="resetButton button cancelButton">Cancel</a>
                 <div class="submit-reset">
                     <button class="submitButton button" type="submit" id="submit">Submit</button>
                     <button class="resetButton button" type="reset" id="reset">Reset</button>

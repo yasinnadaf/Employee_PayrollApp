@@ -1,13 +1,13 @@
 /*UC1 */
-
-html body {
+body{
     margin: 0;
     height: 100%;
 }
 
-.header {
+.header{
     padding: 15px 0;
-    background-color: #ffffff;
+    /* margin-left: 100px; */
+    background-color: #ffff;
 }
 
 .header-content {
@@ -16,6 +16,7 @@ html body {
     justify-content: center;
     align-items: center;
     border: 0px solid green;
+    width: 80%;
 }
 
 .logo-content {
@@ -26,25 +27,18 @@ html body {
     width: 80%;
 }
 
-.logo-content-img {
-    border: solid 0px #42515f;
-}
+.logo-content-img {border: solid 0px #42515f;}
 
-.emp-text {
+.emp-text{
     font: normal normal bold 20px/25px Montserrat;
     font-family: "Montserrat", sans-serif;
     letter-spacing: 0px;
     color: #82a70c;
-    text-transform: capitalize;
+    text-transform:  capitalize;
 }
 
-.emp-payroll {
-    color: #42515f;
-}
-
-* {
-    box-sizing: border-box;
-}
+.emp-payroll {color: #42515f;}
+* {box-sizing: border-box;}
 
 .main-content {
     display: flex;
@@ -63,9 +57,9 @@ html body {
     width: 80%;
     margin: 0 auto;
     padding-bottom: 25px;
-}
+} 
 
-.emp-detail-text {
+.emp-details-text {
     font: normal normal bold 24px/25px Roboto;
     letter-spacing: 0px;
     color: #42515f;
@@ -74,7 +68,7 @@ html body {
 
 .emp-count {
     background-color: #82a70c;
-    color: #ffffff;
+    color: #ffff;
     border-radius: 42%;
     font-size: 16px;
     width: 26px;
@@ -85,18 +79,16 @@ html body {
 .add-button {
     font: normal normal normal 22px/29px Roboto;
     letter-spacing: 0px;
-    color: #ffffff;
-    opacity: 1;
-    background: #82a70c 0% 0% no-repeat padding-box;
-    border: none;
+    color: #ffff;
+    background-color: #82a70c;
+    border:  none;
     border-radius: 5px;
     padding: 5px 18px;
     outline: none;
     cursor: pointer;
     text-decoration: none;
-}    
+}
 
-/* UC3 Tabular Format*/
 .table-main {
     width: 80%;
     margin: 0 auto;
@@ -105,36 +97,34 @@ html body {
 
 .table {
     width: 100%;
-    border-collapse: seperate;
+    border-collapse: separate;
     border-spacing: 0 15px;
     min-width: 800px;
 }
 
-td,
-th {
+td, th{
     text-align: left;
     padding: 5px 8px;
+    /* border: 1px solid #ddd; */
 }
 
 th {
-    background: #42515F 0% 0% no-repeat padding-box;
-    border-radius: 3px 3px 0px 0px;
+    background: #42515f  0% 0% no-repeat padding-box;
+    border-radius: 3px, 3px 0px 0px;
     text-align: left;
     font: normal normal medium 18px/24px Roboto;
     letter-spacing: 0px;
-    color: #FFFFFF;
+    color: #ffff;
     text-transform: uppercase;
     opacity: 1;
-    border: 0px solid #dddddd;
+    border: 0px solid #ddd;
 }
 
 tr:not(:first-child) {
-    background: #ffffff 0% 0% no repeat padding-box;
-    border: 1px solid #e3e3e3;
-    border-radius: 3px;
+    background: #ffff 0% 0% no-repeat padding-box;
 }
 
-td {
+.td {
     font: normal normal normal 14px/21px Roboto;
     letter-spacing: 0px;
     color: #3d3d3d;

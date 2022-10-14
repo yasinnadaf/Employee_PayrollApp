@@ -1,25 +1,23 @@
-/*UC1 */
 body{
     margin: 0;
-    height: 100%;
+    height :100%;
 }
 
 .header{
     padding: 15px 0;
-    /* margin-left: 100px; */
-    background-color: #ffff;
+    background-color: white;
 }
 
-.header-content {
+.header-content{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     border: 0px solid green;
-    width: 80%;
+    /* margin-left: 10px; */
 }
 
-.logo-content {
+.logo-content{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -27,20 +25,24 @@ body{
     width: 80%;
 }
 
-.logo-content-img {border: solid 0px #42515f;}
-
-.emp-text{
-    font: normal normal bold 20px/25px Montserrat;
-    font-family: "Montserrat", sans-serif;
-    letter-spacing: 0px;
-    color: #82a70c;
-    text-transform:  capitalize;
+.logo-content-img{
+    border: solid 0px #42515f;
 }
 
-.emp-payroll {color: #42515f;}
-* {box-sizing: border-box;}
+.emp-text{
+    font: normal normal bold 15px/20px Montserrat;
+    font-family: "Montserrat",sans-serif;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 0px;
+    color: #82a70c;
+    text-transform: capitalize;
+}
+.emp-payroll{color: #42515f;}
 
-.main-content {
+*{box-sizing: border-box;}
+
+.main-content{
     display: flex;
     flex-direction: column;
     min-height: calc(100vh - 80px);
@@ -49,26 +51,27 @@ body{
     box-sizing: border-box;
 }
 
-.header-content {
+.header-content{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 80%;
     margin: 0 auto;
-    padding-bottom: 25px;
-} 
+    padding-bottom: 25px;    
+}
 
-.emp-details-text {
+.emp-detail-text{
     font: normal normal bold 24px/25px Roboto;
     letter-spacing: 0px;
+    /* flex-direction: row; */
     color: #42515f;
     opacity: 1;
 }
 
-.emp-count {
+.emp-count{
     background-color: #82a70c;
-    color: #ffff;
+    color: #ffffff;
     border-radius: 42%;
     font-size: 16px;
     width: 26px;
@@ -76,82 +79,84 @@ body{
     display: inline-block;
 }
 
-.add-button {
-    font: normal normal normal 22px/29px Roboto;
+.add-button{
+    background: #82a70c 0% 0% no-repeat padding-box;
     letter-spacing: 0px;
-    color: #ffff;
-    background-color: #82a70c;
-    border:  none;
-    border-radius: 5px;
+    color: white;
+    opacity: 1;
+    border: none;
+    border-radius: 4px;
     padding: 5px 18px;
-    outline: none;
-    cursor: pointer;
     text-decoration: none;
+    font: normal normal normal 22px/29px Roboto;
+    cursor: pointer;
+    outline: none;  
 }
 
-.table-main {
+.table-main{
     width: 80%;
     margin: 0 auto;
     overflow: auto;
 }
 
-.table {
+.table{
     width: 100%;
     border-collapse: separate;
     border-spacing: 0 15px;
     min-width: 800px;
 }
 
-td, th{
+td,th{
     text-align: left;
     padding: 5px 8px;
-    /* border: 1px solid #ddd; */
 }
 
-th {
-    background: #42515f  0% 0% no-repeat padding-box;
-    border-radius: 3px, 3px 0px 0px;
+th{
+    background: #42515F 0% 0% no-repeat padding-box;
+    border-radius: 3px 3px 0px 0px;
     text-align: left;
     font: normal normal medium 18px/24px Roboto;
     letter-spacing: 0px;
-    color: #ffff;
+    color: #FFFFFF;
     text-transform: uppercase;
     opacity: 1;
-    border: 0px solid #ddd;
+    border: 0px solid #e3e3e3;
 }
 
-tr:not(:first-child) {
-    background: #ffff 0% 0% no-repeat padding-box;
+tr:not(:first-child){
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #e3e3e3;
+    border-radius: 3px;
 }
 
-.td {
+td{
     font: normal normal normal 14px/21px Roboto;
     letter-spacing: 0px;
     color: #3d3d3d;
     opacity: 1;
 }
 
-td:first-child {
+td:first-child{
     display: flex;
     align-items: center;
 }
 
-td img:first-child {
+td img:first-child{
     margin-right: 10px;
 }
 
-td img {
+td img{
     cursor: pointer;
 }
 
-.dept-label {
+.dept-label{
     background-color: #e9fea5;
     border-radius: 40%;
+    display: inline-block;
     width: fit-content;
     padding: 1px 7px;
     text-align: center;
     font-size: 14px;
-    display: inline-block;
     font-weight: 300;
     margin-bottom: 8px;
 }
